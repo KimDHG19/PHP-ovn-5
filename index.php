@@ -11,15 +11,24 @@ function area($length = 1.23466, $width = 8) {
     echo "the area of the rectangle is: " . round($area, 2) . '<br>';
 }
 
-$number = " 3, 24, 80, 9, 1,1.11111111";
-
-$number = explode(',', $number);
-
-$average = array_sum($number) / count($number);
 
 
-echo 'medeltalet är ' . round($average, 2) . '<br>';
+function average() {
+
+    $number = " 3, 24, 80, 9, 1,1.11111111";
+
+    $number = explode(',', $number);
+
+    $average = array_sum($number) / count($number);
+
+
+    echo 'medeltalet är ' . round($average, 2) . '<br>';
+
+}
+
 area();
+average();
+
 
 
 ?>
